@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_a/src/components/horizontal_menu.dart';
+import 'package:proyect_a/src/components/promociones_baner.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -22,17 +23,9 @@ class HomePage extends StatelessWidget {
             _ContenedorMenu(),
             Positioned(
               top: 350,
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Container(
-                  child: Column(
-                    children: <Widget>[
-                      Text('Promociones'),
-                    ],
-                  ),
-                ),
-              ),
-            )
+              child: PromocionesBaner()
+            ),
+            
           ],
         ));
   }
